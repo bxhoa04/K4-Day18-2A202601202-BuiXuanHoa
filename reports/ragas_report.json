@@ -1,0 +1,91 @@
+{
+  "aggregate": {
+    "faithfulness": 0.95,
+    "answer_relevancy": 0.88,
+    "context_precision": 0.9,
+    "context_recall": 0.896
+  },
+  "num_questions": 20,
+  "failures": [
+    {
+      "question": "Mật khẩu phải có tối thiểu bao nhiêu ký tự?",
+      "worst_metric": "context_recall",
+      "score": 0.8,
+      "avg_score": 0.8825000000000001,
+      "diagnosis": "Missing relevant chunks",
+      "suggested_fix": "Improve chunking or add BM25"
+    },
+    {
+      "question": "Bao lâu phải đổi mật khẩu một lần?",
+      "worst_metric": "context_recall",
+      "score": 0.8,
+      "avg_score": 0.8825000000000001,
+      "diagnosis": "Missing relevant chunks",
+      "suggested_fix": "Improve chunking or add BM25"
+    },
+    {
+      "question": "Có cần kích hoạt xác thực đa yếu tố (MFA) không?",
+      "worst_metric": "context_recall",
+      "score": 0.8,
+      "avg_score": 0.8825000000000001,
+      "diagnosis": "Missing relevant chunks",
+      "suggested_fix": "Improve chunking or add BM25"
+    },
+    {
+      "question": "Lương thử việc của nhân viên Junior mức cao nhất là bao nhiêu?",
+      "worst_metric": "context_recall",
+      "score": 0.8,
+      "avg_score": 0.8825000000000001,
+      "diagnosis": "Missing relevant chunks",
+      "suggested_fix": "Improve chunking or add BM25"
+    },
+    {
+      "question": "Nhân viên được nghỉ bao nhiêu ngày khi kết hôn?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.88,
+      "avg_score": 0.9125,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Bảo hiểm sức khỏe PVI có hạn mức bao nhiêu cho nhân viên?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.88,
+      "avg_score": 0.9125,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Phụ cấp ăn trưa hàng tháng là bao nhiêu?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.88,
+      "avg_score": 0.9125,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Nhân viên được nghỉ bao nhiêu ngày phép năm?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.88,
+      "avg_score": 0.9125,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Thâm niên bao nhiêu năm thì được cộng thêm ngày phép?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.88,
+      "avg_score": 0.9125,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    },
+    {
+      "question": "Nhân viên thử việc có được nghỉ phép năm không?",
+      "worst_metric": "answer_relevancy",
+      "score": 0.88,
+      "avg_score": 0.9125,
+      "diagnosis": "Answer doesn't match question",
+      "suggested_fix": "Improve prompt template"
+    }
+  ]
+}
