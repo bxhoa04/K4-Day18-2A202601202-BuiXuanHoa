@@ -5,8 +5,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# --- API Keys ---
+# --- API Keys & LLM Provider ---
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY", "")
+
+LLM_API_KEY = GROQ_API_KEY if GROQ_API_KEY else OPENAI_API_KEY
+LLM_BASE_URL = "https://api.groq.com/openai/v1" if GROQ_API_KEY else None
+LLM_MODEL = "qwen/qwen3.6-27b" if GROQ_API_KEY else "gpt-4o-mini"
 
 # --- Qdrant ---
 QDRANT_HOST = "localhost"
@@ -15,8 +20,8 @@ COLLECTION_NAME = "lab18_production"
 NAIVE_COLLECTION = "lab18_naive"
 
 # --- Embedding ---
-EMBEDDING_MODEL = "BAAI/bge-m3"
-EMBEDDING_DIM = 1024
+EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+EMBEDDING_DIM = 384
 
 # --- Chunking ---
 HIERARCHICAL_PARENT_SIZE = 2048
